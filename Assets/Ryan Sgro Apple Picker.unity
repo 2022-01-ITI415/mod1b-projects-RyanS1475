@@ -236,7 +236,7 @@ GameObject:
   - component: {fileID: 302738001}
   - component: {fileID: 302738000}
   m_Layer: 5
-  m_Name: High Score
+  m_Name: HighScore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -315,7 +315,7 @@ GameObject:
   - component: {fileID: 614535576}
   - component: {fileID: 614535575}
   m_Layer: 5
-  m_Name: Score Counter
+  m_Name: ScoreCounter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
