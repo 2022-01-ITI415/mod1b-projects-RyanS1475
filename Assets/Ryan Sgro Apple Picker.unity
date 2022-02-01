@@ -141,8 +141,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   applePrefab: {fileID: 0}
-  speed: 1
-  leftAndRightEdge: 10
+  speed: 10
+  leftAndRightEdge: 25
   chanceToChangeDirection: 0.1
   secondsBetweenAppleDrops: 1
 --- !u!1 &1843494925
@@ -338,7 +338,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4178364704978505970, guid: eb77170995fbe2e41b71433ef7c91da3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4178364704978505970, guid: eb77170995fbe2e41b71433ef7c91da3, type: 3}
       propertyPath: m_LocalPosition.z
