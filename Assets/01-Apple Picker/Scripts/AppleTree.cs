@@ -9,7 +9,7 @@ public class AppleTree : MonoBehaviour
     public GameObject applePrefab;
     public float speed = 1f;
     public float leftAndRightEdge = 10f;
-    public float chanceToChangeDirection = .1f;
+    public float chanceToChangeDirection = .05f;
     public float secondsBetweenAppleDrops = 1f;
 
     // Start is called before the first frame update
@@ -32,6 +32,14 @@ public class AppleTree : MonoBehaviour
         } else if (pos.x > leftAndRightEdge)
         {
             speed = -Mathf.Abs(speed);
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if (Random.value < chanceToChangeDirection)
+        {
+            speed *= -1;
         }
     }
 }
