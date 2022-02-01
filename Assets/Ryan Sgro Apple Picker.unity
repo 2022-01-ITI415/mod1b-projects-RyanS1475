@@ -335,14 +335,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2058442303}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b5f759102e2bef4daa53948b35327f3, type: 3}
+  m_Script: {fileID: 11500000, guid: 198980b886b8f2140800c81cb341b019, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  applePrefab: {fileID: 0}
-  speed: 1
-  leftAndRightEdge: 10
-  chanceToChangeDirection: 0.05
-  secondsBetweenAppleDrops: 1
   basketPrefab: {fileID: 5381784926267516878, guid: 4406853ac971f8f438c008d0c33ba350, type: 3}
   numBaskets: 3
   basketBottomY: -14
