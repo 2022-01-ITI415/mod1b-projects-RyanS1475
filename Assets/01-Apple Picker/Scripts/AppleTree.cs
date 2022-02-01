@@ -12,9 +12,23 @@ public class AppleTree : MonoBehaviour
     public float chanceToChangeDirection = .05f;
     public float secondsBetweenAppleDrops = 1f;
 
+    public GameObject basketPrefab;
+    public int numBaskets = 3;
+    public float basketBottomY = -14f;
+    public float basketSpacingY = 2f;
+
     // Start is called before the first frame update
     void Start()
     {
+        // creates baskets
+        for (int i=0; i<numBaskets; i++)
+        {
+            GameObject tBasketGO = Instantiate<GameObject>(basketPrefab);
+            Vector3 pos = Vector3.zero;
+            pos.y = basketBottomY + (basketSpacingY * i);
+            tBasketGO.transform.position = pos;
+        }
+
         // starts dropping apples
         Invoke("DropApple", 2f);
     }
