@@ -10,7 +10,7 @@ public class AppleTree : MonoBehaviour
     public float speed = 1f;
     public float leftAndRightEdge = 10f;
     public float chanceToChangeDirection = .05f;
-    public float secondsBetweenAppleDrops = 1f;
+    public float secondsBetweenAppleDrops = .6f;
 
     // Start is called before the first frame update
     void Start()

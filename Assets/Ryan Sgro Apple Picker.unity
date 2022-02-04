@@ -402,8 +402,8 @@ MonoBehaviour:
   applePrefab: {fileID: 6030303724994675694, guid: 7ae3b89a5d96a404da536c303579ef8a, type: 3}
   speed: 10
   leftAndRightEdge: 25
-  chanceToChangeDirection: 0.1
-  secondsBetweenAppleDrops: 1
+  chanceToChangeDirection: 0.05
+  secondsBetweenAppleDrops: 0.6
 --- !u!1 &1843494925
 GameObject:
   m_ObjectHideFlags: 0
@@ -663,6 +663,7 @@ MonoBehaviour:
   numBaskets: 3
   basketBottomY: -14
   basketSpacingY: 2
+  basketList: []
 --- !u!1001 &4178364704703170710
 PrefabInstance:
   m_ObjectHideFlags: 0
