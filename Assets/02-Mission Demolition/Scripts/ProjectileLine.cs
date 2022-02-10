@@ -71,7 +71,7 @@ public class ProjectileLine : MonoBehaviour
         }
     }
 
-    public Vector3 lastPoint()
+    public Vector3 lastPoint
     {
         get
         {
