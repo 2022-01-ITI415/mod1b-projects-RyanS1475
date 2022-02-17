@@ -5,6 +5,7 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     public float speed = 10f;
+    Vector3 lastPosition;
 
     // Start is called before the first frame update
     void Start()
