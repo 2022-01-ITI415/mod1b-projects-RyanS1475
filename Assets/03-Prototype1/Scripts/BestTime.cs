@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class BestTime : MonoBehaviour
 {
-    static public int crntTime = 00:00.000;
+    static public int crntTime = 00;
 
     private void Awake()
     {
