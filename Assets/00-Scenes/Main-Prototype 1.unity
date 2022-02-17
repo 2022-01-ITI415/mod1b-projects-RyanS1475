@@ -1843,9 +1843,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  topEdge: 6
+  topEdge: 8
   bottomEdge: 2
-  timeValue: 5
+  timeValue: 3
 --- !u!1 &2096224576
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,7 +9,7 @@ public class TimedVertical : MonoBehaviour
     public float topEdge = 6f;
     public float bottomEdge = 2f;
 
-    public float timeValue = 3;
+    public float timeValue = 0;
 
     // Start is called before the first frame update
     void Start()
