@@ -10,6 +10,14 @@ public class PlayerController : MonoBehaviour
     private float movementX;
     private float movementY;
 
+    public GameObject prefabProjectile;
+    public float velocityMult = 8f;
+    public GameObject launchPoint;
+    public Vector3 launchPos;
+    public GameObject projectile;
+    public bool aimingMode;
+    private Rigidbody projectileRigidbody;
+
     // Start is called before the first frame update
     void Start()
     {
