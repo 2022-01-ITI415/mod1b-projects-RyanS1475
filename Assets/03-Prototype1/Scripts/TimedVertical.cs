@@ -9,7 +9,7 @@ public class TimedVertical : MonoBehaviour
     public float topEdge = 6f;
     public float bottomEdge = 2f;
 
-    public float timeValue = 5;
+    public float timeValue = 3;
 
     // Start is called before the first frame update
     void Start()
@@ -29,12 +29,12 @@ public class TimedVertical : MonoBehaviour
             if (pos.y > topEdge)
             {
                 speed = -Mathf.Abs(speed);
-                timeValue = 5;
+                timeValue = 3;
             }
             else if (pos.y < bottomEdge)
             {
                 speed = Mathf.Abs(speed);
-                timeValue = 5;
+                timeValue = 3;
             }
         } else if(timeValue > 0)
         {
