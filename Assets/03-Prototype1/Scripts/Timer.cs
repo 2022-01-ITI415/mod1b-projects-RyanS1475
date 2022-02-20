@@ -5,12 +5,12 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    public Text textTimer;
+    public Text TimerTrack;
 
     // Start is called before the first frame update
     void Start()
     {
-        textTimer.text = "Timer: 00:00.000";
+        TimerTrack.text = "Timer: 00:00.000";
     }
 
     // Update is called once per frame
@@ -22,6 +22,6 @@ public class Timer : MonoBehaviour
         int seconds = Mathf.RoundToInt(tmpTime) % 60;
         float millis = tmpTime % 1 * 1000;
         string tmpTimeStr = string.Format("{0:00}:{1:00}.{2:000}", minutes, seconds, millis);
-        textTimer.text = "Timer: " + tmpTimeStr;
+        TimerTrack.text = "Timer: " + tmpTimeStr;
     }
 }
