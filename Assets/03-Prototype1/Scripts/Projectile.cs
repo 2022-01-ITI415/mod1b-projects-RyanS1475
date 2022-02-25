@@ -28,17 +28,31 @@ public class Projectile : MonoBehaviour
         projectile.GetComponent<Rigidbody>().isKinematic = true;
     }
 
-    // Start is called before the first frame update
-    void Start()
+    void OnTriggerEnter(Collider other)
     {
-        
-    }
+        // when the trigger is hit by something
+        // check to see if it's a Projectile 
+        if (other.gameObject.tag == "Target" || other.gameObject.tag == "Target_1" || other.gameObject.tag == "Target_2" || other.gameObject.tag == "Target_3" || other.gameObject.tag == "Target_4")
+        {
 
-    // Update is called once per frame
-    void Update()
-    {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, 100))
-            print("Hit something!");
+        }
+        {
+            // if so, set goalMet = true
+            Goal.goalMet = true;
+
+            // Start is called before the first frame update
+            void Start()
+            {
+
+            }
+
+            // Update is called once per frame
+            void Update()
+            {
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                if (Physics.Raycast(ray, 100))
+                    print("Hit something!");
+            }
+        }
     }
 }
